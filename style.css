@@ -71,8 +71,11 @@ footer a:hover {
 
 #meme-image {
   max-width: 100%;
+  max-height: 400px; /* limits vertical size on desktop */
   height: auto;
+  width: auto;
   border: 2px solid #333;
   border-radius: 5px;
+  object-fit: contain; /* ensures it scales proportionally */
 }
 
