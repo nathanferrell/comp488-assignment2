@@ -1,11 +1,20 @@
-body {
-  font-family: Arial, sans-serif;
+/* Ensure full height layout for sticky footer */
+html, body {
+  height: 100%;
   margin: 0;
-  padding: 0;
+}
+
+/* Body as flex container */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
 }
 
+/* Header */
 header {
   background: #333;
   color: #fff;
@@ -13,10 +22,13 @@ header {
   text-align: center;
 }
 
+/* Main grows to fill space between header and footer */
 main {
+  flex: 1;
   padding: 1rem;
 }
 
+/* Content sections */
 section {
   background: #fff;
   margin: 1rem 0;
@@ -24,6 +36,7 @@ section {
   border-radius: 5px;
 }
 
+/* Buttons */
 button {
   padding: 10px 15px;
   background: #333;
@@ -36,6 +49,7 @@ button:hover {
   background: #555;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
@@ -43,6 +57,7 @@ footer {
   color: #fff;
 }
 
+/* Footer links */
 footer a {
   color: #fff;
   text-decoration: none;
@@ -51,5 +66,4 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-
 
